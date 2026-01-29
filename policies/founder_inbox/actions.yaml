@@ -1,0 +1,25 @@
+actions:
+
+  compose_email:
+    description: Draft or send an email response
+    external: true
+    auto_execute_allowed: false
+
+  create_calendar_event:
+    description: Create a meeting or reminder
+    external: true
+    auto_execute_allowed: false
+
+  forward_email:
+    description: Forward email internally
+    external: false
+    auto_execute_allowed: true
+    allowed_targets:
+      - assistant
+      - ops
+      - sales
+
+  add_label:
+    description: Apply a label or flag to the email
+    external: false
+    auto_execute_allowed: true

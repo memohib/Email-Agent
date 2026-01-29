@@ -1,0 +1,36 @@
+decisions:
+
+  draft_reply:
+    description: Prepare a reply draft for later review
+    requires_confirmation: true
+    allowed_actions:
+      - compose_email
+
+  schedule_followup:
+    description: Propose a follow-up meeting or reminder
+    requires_confirmation: true
+    allowed_actions:
+      - create_calendar_event
+
+  delegate:
+    description: Assign email handling to another role
+    requires_confirmation: false
+    allowed_actions:
+      - forward_email
+
+  ask_clarification:
+    description: Ask sender for more information
+    requires_confirmation: true
+    allowed_actions:
+      - compose_email
+
+  ignore:
+    description: Take no action on the email
+    requires_confirmation: false
+    allowed_actions: []
+  
+  flag_for_review:
+    description: Flag email for manual founder review
+    requires_confirmation: false
+    allowed_actions:
+      - add_label

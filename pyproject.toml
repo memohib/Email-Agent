@@ -1,0 +1,17 @@
+[project]
+name = "email-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.14.4",
+    "google-api-python-client>=2.188.0",
+    "google-auth>=2.47.0",
+    "google-auth-oauthlib>=1.2.4",
+    "ipython>=8.37.0",
+    "langchain-core>=1.2.3",
+    "langchain-groq>=1.1.1",
+    "langgraph>=1.0.5",
+    "pydantic>=2.12.5",
+]

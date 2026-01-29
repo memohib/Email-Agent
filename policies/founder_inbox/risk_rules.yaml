@@ -1,0 +1,41 @@
+risk_levels:
+  - low
+  - medium
+  - high
+
+urgency_levels:
+  - immediate
+  - same_day
+  - this_week
+  - can_wait
+
+risk_urgency_matrix:
+
+  high:
+    allowed_urgency:
+      - immediate
+      - same_day
+
+  medium:
+    allowed_urgency:
+      - same_day
+      - this_week
+
+  low:
+    allowed_urgency:
+      - this_week
+      - can_wait
+
+risk_constraints:
+  high:
+    allowed_decisions:
+      - draft_reply
+      - ask_clarification
+      - flag_for_review
+    auto_execute_allowed: false
+
+  medium:
+    auto_execute_allowed: false
+
+  low:
+    auto_execute_allowed: true

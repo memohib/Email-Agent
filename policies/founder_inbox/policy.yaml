@@ -1,0 +1,19 @@
+domain: founder_inbox
+version: v1
+description: >
+  Decision policy governing founder email inbox.
+  Defines allowed categories, decisions, actions, and safety constraints.
+
+autonomy:
+  level: semi_auto
+  
+allowed_domains:
+  - founder_inbox
+
+default_fallback_decision: flag_for_review
+
+global_rules:
+  external_communication_requires_confirmation: true
+  auto_execution_disabled: true
+  high_risk_never_auto_execute: true
+  legal_and_financial_always_require_confirmation: true

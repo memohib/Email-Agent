@@ -1,0 +1,52 @@
+categories:
+
+  investor:
+    description: Emails from investors or potential investors
+    allowed_decisions:
+      - draft_reply
+      - schedule_followup
+      - ask_clarification
+    max_risk_level: high
+
+  customer:
+    description: Customer queries, complaints, escalations
+    allowed_decisions:
+      - draft_reply
+      - delegate
+      - ask_clarification
+    max_risk_level: medium
+
+  legal:
+    description: Legal notices, contracts, compliance matters
+    allowed_decisions:
+      - flag_for_review
+      - ask_clarification
+    max_risk_level: high
+
+  hiring:
+    description: Hiring, recruiting, referrals
+    allowed_decisions:
+      - draft_reply
+      - delegate
+    max_risk_level: medium
+
+  internal:
+    description: Internal team communication
+    allowed_decisions:
+      - draft_reply
+      - delegate
+      - ignore
+    max_risk_level: low
+
+  follow_up:
+    description: Non-urgent follow-up emails
+    allowed_decisions:
+      - draft_reply
+      - ignore
+    max_risk_level: low
+
+  newsletter:
+    description: Marketing emails, newsletters, announcements
+    allowed_decisions:
+      - ignore
+    max_risk_level: low
